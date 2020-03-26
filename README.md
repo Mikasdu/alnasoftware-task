@@ -2,7 +2,7 @@
 
 
 
-## Running the application
+## Running and configuring the application
 As I used iv.lt mysql server for security purposes it requires internal IP, or configured IP address.
 Feel free to ask I will add your IP address to my database server no further configuration required.
 
