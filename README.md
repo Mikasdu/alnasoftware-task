@@ -14,7 +14,7 @@ Database connection configuration file:
 ```
 src\main\resources\application.properties
 ```
-Without MySQL configuration application won't compile.
+Without MySQL configuration application won't start.
 
 
 After cloning the repository, run this to launch the application:
