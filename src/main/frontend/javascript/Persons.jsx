@@ -8,7 +8,6 @@ const Persons = ({ list }) => {
     return (
         person.map(person =>
             <tr key={ person.id }>
-                <td scope="row">{ person.id }</td>
                 <td>{ person.name }</td>
                 <td>{ person.birthday }</td>
             </tr>

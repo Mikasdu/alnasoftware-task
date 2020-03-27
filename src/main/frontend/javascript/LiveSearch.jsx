@@ -51,7 +51,6 @@ class LiveSearch extends Component {
                 <table className="table">
                     <thead>
                         <tr>
-                            <th scope="col">#Id</th>
                             <th scope="col">Name</th>
                             <th scope="col">Birthday</th>
                         </tr>
