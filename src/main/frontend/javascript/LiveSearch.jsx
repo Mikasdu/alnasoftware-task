@@ -37,30 +37,32 @@ class LiveSearch extends Component {
     }
 
     render() {
-        return (
-            <div>
-                <input
-                    type="text"
-                    className="form-control"
-                    aria-label="Username"
-                    aria-describedby="addon-wrapping"
-                    value={this.state.value}
-                    onChange={e => this.onChangeHandler(e)}
-                    placeholder="name or birthday etc. 1988-05-19"
-                />
-                <table className="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Name</th>
-                            <th scope="col">Birthday</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {this.renderPersons}
-                    </tbody>
-                </table>
-            </div>
-        );
+        return (<>
+                <div className="row">
+                    <input
+                        type="text"
+                        className="form-control"
+                        aria-label="Username"
+                        aria-describedby="addon-wrapping"
+                        value={this.state.value}
+                        onChange={e => this.onChangeHandler(e)}
+                        placeholder="Search for name or birthday"
+                    />
+                </div>
+                <div className="row">
+                    <table className="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Birthday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {this.renderPersons}
+                        </tbody>
+                    </table>
+                </div>
+        </>);
     }
 }
 
